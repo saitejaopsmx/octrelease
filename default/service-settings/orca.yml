@@ -1,0 +1,12 @@
+artifactId: quay.io/opsmxpublic/ubi8-oes-orca:74c63d9f4-72
+kubernetes:
+  volumes:
+  - id: oes-cacerts
+    mountPath: /etc/ssl/certs/java
+    type: secret
+    readOnly: true
+  podAnnotations:
+    moniker.spinnaker.io/application: spin
+
+env:
+  JAVA_OPTS: "-XX:MaxRAMPercentage=100.0"

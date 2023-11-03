@@ -1,0 +1,6 @@
+artifactId: quay.io/opsmxpublic/ubi8-oes-echo:d56da527-17
+env:
+  JAVA_OPTS: "-XX:MaxRAMPercentage=100.0"
+kubernetes:
+  podAnnotations:
+    moniker.spinnaker.io/application: spin

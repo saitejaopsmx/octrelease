@@ -1,0 +1,6 @@
+artifactId: quay.io/opsmxpublic/ubi8-oes-fiat:7e790e9-24
+env:
+  JAVA_OPTS: "-XX:MaxRAMPercentage=100.0"
+kubernetes:
+  podAnnotations:
+    moniker.spinnaker.io/application: spin
